@@ -6,7 +6,7 @@ struct MetricsView: View {
     var body: some View {
         NavigationView {
             List(viewModel.usageHistory, id: \.timestamp) { snapshot in
-                Section(snapshot.timestamp.formatted(date: .omitted, time: .standard)) {
+                Section(header: Text(Self.timeFormatter.string(from: snapshot.timestamp))) {
                     DetailRow(title: "CPU", value: String(format: "%.1f%%", snapshot.cpuUsage))
                     DetailRow(title: "RAM", value: String(format: "%.1f%%", snapshot.ramUsage))
                     DetailRow(title: "Storage", value: String(format: "%.1f%%", snapshot.ssdUsage))
@@ -15,6 +15,13 @@ struct MetricsView: View {
             .navigationTitle("Usage History")
         }
     }
+
+    private static let timeFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .none
+        formatter.timeStyle = .medium
+        return formatter
+    }()
 }
 
 struct MetricsView_Previews: PreviewProvider {
