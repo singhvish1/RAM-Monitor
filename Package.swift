@@ -16,11 +16,13 @@ let package = Package(
     targets: [
         .target(
             name: "DeviceMetricsApp",
-            dependencies: []
+            dependencies: [],
+            path: "DeviceMetricsApp"
         ),
         .target(
             name: "DeviceMetricsWidget",
-            dependencies: []
+            dependencies: [],
+            path: "DeviceMetricsWidget"
         )
     ]
 )
