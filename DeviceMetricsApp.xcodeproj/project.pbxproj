@@ -22,7 +22,6 @@
 		100000000000000000000013 /* DeviceSpecsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000013 /* DeviceSpecsWidget.swift */; };
 		100000000000000000000014 /* DeviceInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000014 /* DeviceInfoService.swift */; };
 		100000000000000000000015 /* SystemMetricsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000015 /* SystemMetricsService.swift */; };
-		100000000000000000000016 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000016 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +70,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		300000000000000000000002 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (100000000000000000000016, ); runOnlyForDeploymentPostprocessing = 0; };
+		300000000000000000000002 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
