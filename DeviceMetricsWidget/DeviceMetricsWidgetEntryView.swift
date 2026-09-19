@@ -2,33 +2,39 @@ import SwiftUI
 import WidgetKit
 
 struct DeviceMetricsWidgetEntryView: View {
-    var entry: DeviceMetricsEntry
+    let entry: DeviceMetricsWidgetEntry
 
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 6) {
             Text("Device Metrics")
                 .font(.headline)
-                .padding()
-
-            Text("CPU Usage: \(entry.cpuUsage)%")
-                .font(.subheadline)
-
-            Text("RAM Usage: \(entry.ramUsage)%")
-                .font(.subheadline)
-
-            Text("SSD Usage: \(entry.ssdUsage)%")
-                .font(.subheadline)
-
-            Text("Device: \(entry.deviceName)")
-                .font(.subheadline)
+            metric("CPU", entry.cpuUsage)
+            metric("RAM", entry.ramUsage)
+            metric("Storage", entry.storageUsage)
         }
         .padding()
+    }
+
+    private func metric(_ name: String, _ value: Double) -> some View {
+        HStack {
+            Text(name)
+            Spacer()
+            Text("\(value, specifier: "%.0f")%")
+        }
+        .font(.caption)
     }
 }
 
 struct DeviceMetricsWidgetEntryView_Previews: PreviewProvider {
     static var previews: some View {
-        DeviceMetricsWidgetEntryView(entry: DeviceMetricsEntry(cpuUsage: 30, ramUsage: 50, ssdUsage: 20, deviceName: "iPhone 14"))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+        DeviceMetricsWidgetEntryView(
+            entry: DeviceMetricsWidgetEntry(
+                date: Date(),
+                cpuUsage: 30,
+                ramUsage: 50,
+                storageUsage: 20
+            )
+        )
+        .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

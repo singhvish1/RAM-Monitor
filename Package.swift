@@ -6,23 +6,13 @@ let package = Package(
     platforms: [
         .iOS(.v14)
     ],
-    products: [
-        .library(
-            name: "DeviceMetricsWidget",
-            targets: ["DeviceMetricsWidget"]
-        )
-    ],
+    products: [],
     dependencies: [],
     targets: [
         .target(
             name: "DeviceMetricsApp",
             dependencies: [],
             path: "DeviceMetricsApp"
-        ),
-        .target(
-            name: "DeviceMetricsWidget",
-            dependencies: [],
-            path: "DeviceMetricsWidget"
         )
     ]
 )
