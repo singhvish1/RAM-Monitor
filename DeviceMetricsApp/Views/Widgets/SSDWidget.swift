@@ -7,7 +7,7 @@ struct SSDWidget: View {
         VStack {
             Text("SSD Usage")
                 .font(.headline)
-            Text("\(ssdUsage, specifier: "%.1f")%")
+            Text(String(format: "%.1f%%", ssdUsage))
                 .font(.largeTitle)
                 .foregroundColor(ssdUsage > 80 ? .red : .green) // Change color based on usage
         }

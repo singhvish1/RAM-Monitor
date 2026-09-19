@@ -7,9 +7,9 @@ struct MetricsView: View {
         NavigationView {
             List(viewModel.usageHistory, id: \.timestamp) { snapshot in
                 Section(snapshot.timestamp.formatted(date: .omitted, time: .standard)) {
-                    DetailRow(title: "CPU", value: "\(snapshot.cpuUsage, specifier: "%.1f")%")
-                    DetailRow(title: "RAM", value: "\(snapshot.ramUsage, specifier: "%.1f")%")
-                    DetailRow(title: "Storage", value: "\(snapshot.ssdUsage, specifier: "%.1f")%")
+                    DetailRow(title: "CPU", value: String(format: "%.1f%%", snapshot.cpuUsage))
+                    DetailRow(title: "RAM", value: String(format: "%.1f%%", snapshot.ramUsage))
+                    DetailRow(title: "Storage", value: String(format: "%.1f%%", snapshot.ssdUsage))
                 }
             }
             .navigationTitle("Usage History")

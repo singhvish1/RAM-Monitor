@@ -7,12 +7,12 @@ struct CPUWidget: View {
         VStack {
             Text("CPU Usage")
                 .font(.headline)
-            Text("\(viewModel.cpuUsage, specifier: "%.2f")%")
+            Text(String(format: "%.1f%%", cpuUsage))
                 .font(.largeTitle)
-                .foregroundColor(viewModel.cpuUsage > 80 ? .red : .green)
+                .foregroundColor(cpuUsage > 80 ? .red : .green)
         }
         .padding()
-        .background(Color(.systemGray6))
+        .background(Color.gray.opacity(0.2))
         .cornerRadius(10)
         .shadow(radius: 5)
     }

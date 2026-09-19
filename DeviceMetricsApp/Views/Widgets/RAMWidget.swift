@@ -7,7 +7,7 @@ struct RAMWidget: View {
         VStack {
             Text("RAM Usage")
                 .font(.headline)
-            Text("\(ramUsage, specifier: "%.1f")%")
+            Text(String(format: "%.1f%%", ramUsage))
                 .font(.largeTitle)
                 .foregroundColor(ramUsage > 80 ? .red : .green)
         }
