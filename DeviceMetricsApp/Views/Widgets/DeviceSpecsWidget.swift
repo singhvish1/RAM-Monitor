@@ -4,24 +4,41 @@ struct DeviceSpecsWidget: View {
     let deviceInfo: DeviceInfo?
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Device Specifications")
-                .font(.headline)
-                .padding(.bottom, 5)
+        VStack(alignment: .leading, spacing: 16) {
+            HStack {
+                Image(systemName: "iphone")
+                    .foregroundColor(AppTheme.accent)
+                Text("DEVICE DETAILS")
+                    .font(.caption.weight(.bold))
+                    .tracking(1.2)
+                    .foregroundColor(AppTheme.muted)
+                Spacer()
+            }
 
             if let deviceInfo {
-                Text("Device Name: \(deviceInfo.deviceName)")
-                Text("Model: \(deviceInfo.model)")
-                Text("OS Version: \(deviceInfo.osVersion)")
-                Text("Storage: \(ByteCountFormatter.string(fromByteCount: deviceInfo.totalStorage, countStyle: .file))")
+                detail("Device", deviceInfo.deviceName)
+                detail("Model", deviceInfo.model)
+                detail("Software", deviceInfo.osVersion)
+                detail("Capacity", ByteCountFormatter.string(fromByteCount: deviceInfo.totalStorage, countStyle: .file))
             } else {
                 ProgressView()
             }
         }
-        .padding()
-        .background(Color.gray.opacity(0.1))
-        .cornerRadius(10)
-        .shadow(radius: 5)
+        .padding(18)
+        .background(AppTheme.card)
+        .cornerRadius(18)
+    }
+
+    private func detail(_ title: String, _ value: String) -> some View {
+        HStack {
+            Text(title).foregroundColor(AppTheme.muted)
+            Spacer()
+            Text(value)
+                .fontWeight(.semibold)
+                .foregroundColor(.white)
+                .lineLimit(1)
+        }
+        .font(.subheadline)
     }
 }
 

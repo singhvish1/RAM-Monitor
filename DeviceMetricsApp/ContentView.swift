@@ -10,6 +10,7 @@ struct ContentView: View {
             MetricsView(viewModel: viewModel)
                 .tabItem { Label("History", systemImage: "chart.xyaxis.line") }
         }
+        .accentColor(AppTheme.accent)
     }
 }
 
