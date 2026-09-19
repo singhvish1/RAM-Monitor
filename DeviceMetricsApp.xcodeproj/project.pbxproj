@@ -1,0 +1,94 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* App.swift */; };
+		100000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* ContentView.swift */; };
+		100000000000000000000003 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* DeviceInfo.swift */; };
+		100000000000000000000004 /* SystemMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* SystemMetrics.swift */; };
+		100000000000000000000005 /* UsageSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* UsageSnapshot.swift */; };
+		100000000000000000000006 /* SystemMonitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* SystemMonitorViewModel.swift */; };
+		100000000000000000000007 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* DashboardView.swift */; };
+		100000000000000000000008 /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* MetricsView.swift */; };
+		100000000000000000000009 /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* DetailRow.swift */; };
+		100000000000000000000010 /* CPUWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000010 /* CPUWidget.swift */; };
+		100000000000000000000011 /* RAMWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000011 /* RAMWidget.swift */; };
+		100000000000000000000012 /* SSDWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000012 /* SSDWidget.swift */; };
+		100000000000000000000013 /* DeviceSpecsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000013 /* DeviceSpecsWidget.swift */; };
+		100000000000000000000014 /* DeviceInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000014 /* DeviceInfoService.swift */; };
+		100000000000000000000015 /* SystemMetricsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000015 /* SystemMetricsService.swift */; };
+		100000000000000000000016 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000016 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		200000000000000000000100 /* DeviceMetricsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceMetricsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200000000000000000000001 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* SystemMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMetrics.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* UsageSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageSnapshot.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* SystemMonitorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitorViewModel.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		200000000000000000000008 /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		200000000000000000000009 /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
+		200000000000000000000010 /* CPUWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUWidget.swift; sourceTree = "<group>"; };
+		200000000000000000000011 /* RAMWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMWidget.swift; sourceTree = "<group>"; };
+		200000000000000000000012 /* SSDWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSDWidget.swift; sourceTree = "<group>"; };
+		200000000000000000000013 /* DeviceSpecsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSpecsWidget.swift; sourceTree = "<group>"; };
+		200000000000000000000014 /* DeviceInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoService.swift; sourceTree = "<group>"; };
+		200000000000000000000015 /* SystemMetricsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMetricsService.swift; sourceTree = "<group>"; };
+		200000000000000000000016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400000000000000000000001 = {isa = PBXGroup; children = (400000000000000000000002, 400000000000000000000009, ); sourceTree = "<group>"; };
+		400000000000000000000002 /* DeviceMetricsApp */ = {isa = PBXGroup; children = (200000000000000000000001, 200000000000000000000002, 400000000000000000000003, 400000000000000000000004, 400000000000000000000005, 400000000000000000000006, 200000000000000000000016, ); path = DeviceMetricsApp; sourceTree = "<group>"; };
+		400000000000000000000003 /* Models */ = {isa = PBXGroup; children = (200000000000000000000003, 200000000000000000000004, 200000000000000000000005, ); path = Models; sourceTree = "<group>"; };
+		400000000000000000000004 /* ViewModels */ = {isa = PBXGroup; children = (200000000000000000000006, ); path = ViewModels; sourceTree = "<group>"; };
+		400000000000000000000005 /* Views */ = {isa = PBXGroup; children = (200000000000000000000007, 200000000000000000000008, 200000000000000000000009, 400000000000000000000014, ); path = Views; sourceTree = "<group>"; };
+		400000000000000000000006 /* Services */ = {isa = PBXGroup; children = (200000000000000000000014, 200000000000000000000015, ); path = Services; sourceTree = "<group>"; };
+		400000000000000000000007 /* Resources */ = {isa = PBXGroup; children = (); path = Resources; sourceTree = "<group>"; };
+		400000000000000000000008 /* Preview Content */ = {isa = PBXGroup; children = (); path = "Preview Content"; sourceTree = "<group>"; };
+		400000000000000000000009 /* Products */ = {isa = PBXGroup; children = (200000000000000000000100, ); name = Products; sourceTree = "<group>"; };
+		400000000000000000000014 /* Widgets */ = {isa = PBXGroup; children = (200000000000000000000010, 200000000000000000000011, 200000000000000000000012, 200000000000000000000013, ); path = Widgets; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* DeviceMetricsApp */ = {isa = PBXNativeTarget; buildConfigurationList = 600000000000000000000001; buildPhases = (300000000000000000000002, 300000000000000000000001, 300000000000000000000003, ); buildRules = (); dependencies = (); name = DeviceMetricsApp; productName = DeviceMetricsApp; productReference = 200000000000000000000100; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		700000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {LastUpgradeCheck = 2630; ORGANIZATIONNAME = ""; TargetAttributes = {500000000000000000000001 = {CreatedOnToolsVersion = 26.3; }; }; }; buildConfigurationList = 600000000000000000000003; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, ); mainGroup = 400000000000000000000001; productRefGroup = 400000000000000000000009; projectDirPath = ""; projectRoot = ""; targets = (500000000000000000000001, ); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		300000000000000000000002 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (100000000000000000000016, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		300000000000000000000003 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (100000000000000000000001, 100000000000000000000002, 100000000000000000000003, 100000000000000000000004, 100000000000000000000005, 100000000000000000000006, 100000000000000000000007, 100000000000000000000008, 100000000000000000000009, 100000000000000000000010, 100000000000000000000011, 100000000000000000000012, 100000000000000000000013, 100000000000000000000014, 100000000000000000000015, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		800000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = DeviceMetricsApp/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.DeviceMetricsApp; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		800000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = DeviceMetricsApp/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.DeviceMetricsApp; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		800000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; }; name = Debug; };
+		800000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		600000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (800000000000000000000001, 800000000000000000000002, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		600000000000000000000003 = {isa = XCConfigurationList; buildConfigurations = (800000000000000000000003, 800000000000000000000004, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 700000000000000000000001 /* Project object */;
+}
