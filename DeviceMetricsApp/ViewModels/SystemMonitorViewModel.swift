@@ -6,6 +6,7 @@ class SystemMonitorViewModel: ObservableObject {
     @Published var ramUsage: Double = 0.0
     @Published var ssdUsage: Double = 0.0
     @Published var deviceInfo: DeviceInfo?
+    @Published private(set) var usageHistory: [UsageSnapshot] = []
     
     private var cancellables = Set<AnyCancellable>()
     private let deviceInfoService = DeviceInfoService()
